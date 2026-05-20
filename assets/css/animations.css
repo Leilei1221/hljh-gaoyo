@@ -71,13 +71,13 @@
   }
 }
 
-/* 交錯延遲 */
-.func-card:nth-child(1) { animation-delay: 0.05s; }
-.func-card:nth-child(2) { animation-delay: 0.12s; }
-.func-card:nth-child(3) { animation-delay: 0.19s; }
-.func-card:nth-child(4) { animation-delay: 0.26s; }
-.func-card:nth-child(5) { animation-delay: 0.33s; }
-.func-card:nth-child(6) { animation-delay: 0.40s; }
+/* Skill: stagger-sequence — 30-50ms per item (not all-at-once, not too slow) */
+.func-card:nth-child(1) { animation-delay: 0.00s; }
+.func-card:nth-child(2) { animation-delay: 0.04s; }
+.func-card:nth-child(3) { animation-delay: 0.08s; }
+.func-card:nth-child(4) { animation-delay: 0.12s; }
+.func-card:nth-child(5) { animation-delay: 0.16s; }
+.func-card:nth-child(6) { animation-delay: 0.20s; }
 
 /* --- yarn-weave：毛線橫移 --- */
 @keyframes yarn-weave {
