@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="magpieBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5A8AD4"/>
+      <stop offset="100%" stop-color="#3460B0"/>
+    </linearGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4472C4"/>
+      <stop offset="60%" stop-color="#2A52A0"/>
+      <stop offset="100%" stop-color="white"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="38" cy="96" rx="22" ry="4" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- 長尾巴（漸層藍白） -->
+  <path d="M55,52 Q70,55 80,60 Q90,65 95,72 Q90,74 84,70 Q78,66 68,62 Q60,60 54,58Z"
+        fill="url(#tailGrad)"/>
+  <path d="M55,54 Q68,58 78,64 Q86,70 88,78 Q83,79 78,74 Q70,68 62,63 Q57,60 53,58Z"
+        fill="#3460B0" opacity="0.7"/>
+  <path d="M55,56 Q65,62 72,70 Q76,78 74,84 Q69,84 66,78 Q60,70 55,63 Q52,60 51,58Z"
+        fill="#2A52A0" opacity="0.5"/>
+  <!-- 尾端白斑 -->
+  <ellipse cx="93" cy="73" rx="4" ry="2" fill="white" opacity="0.85"/>
+  <ellipse cx="87" cy="79" rx="3.5" ry="1.8" fill="white" opacity="0.75"/>
+  <ellipse cx="73" cy="85" rx="3" ry="1.5" fill="white" opacity="0.65"/>
+
+  <!-- 身體（鈷藍） -->
+  <ellipse cx="40" cy="60" rx="20" ry="14" fill="url(#magpieBodyGrad)"/>
+  <!-- 翅膀摺疊 -->
+  <path d="M25,58 Q30,50 40,54 Q36,62 28,64Z" fill="#3460B0" opacity="0.6"/>
+  <path d="M55,54 Q60,50 58,60 Q52,64 50,60Z" fill="#3460B0" opacity="0.4"/>
+  <!-- 腹部淡色 -->
+  <ellipse cx="38" cy="64" rx="10" ry="7" fill="#A8C0E8" opacity="0.4"/>
+
+  <!-- 頭（棕紅） -->
+  <circle cx="22" cy="44" r="15" fill="#8B3A1A"/>
+  <!-- 頭頂光澤 -->
+  <ellipse cx="18" cy="38" rx="6" ry="5" fill="#A04A22" opacity="0.5"/>
+
+  <!-- 白色眼環 -->
+  <circle cx="16" cy="44" r="6" fill="white"/>
+  <!-- 眼睛 -->
+  <circle cx="16" cy="44" r="4" fill="#1A1A1A"/>
+  <circle cx="14.5" cy="42.5" r="1.4" fill="white"/>
+
+  <!-- 嘴（黃色） -->
+  <path d="M4,44 L8,41 L8,47Z" fill="#E8A020"/>
+  <line x1="4" y1="44" x2="8" y2="44" stroke="#C88010" stroke-width="0.8"/>
+
+  <!-- 腳 -->
+  <g fill="#E8A020">
+    <line x1="30" y1="74" x2="28" y2="85" stroke="#C88010" stroke-width="2.5"/>
+    <line x1="36" y1="74" x2="34" y2="85" stroke="#C88010" stroke-width="2.5"/>
+    <!-- 趾爪 -->
+    <line x1="28" y1="85" x2="22" y2="88" stroke="#C88010" stroke-width="1.5"/>
+    <line x1="28" y1="85" x2="28" y2="90" stroke="#C88010" stroke-width="1.5"/>
+    <line x1="28" y1="85" x2="33" y2="88" stroke="#C88010" stroke-width="1.5"/>
+    <line x1="34" y1="85" x2="29" y2="88" stroke="#C88010" stroke-width="1.5"/>
+    <line x1="34" y1="85" x2="34" y2="90" stroke="#C88010" stroke-width="1.5"/>
+    <line x1="34" y1="85" x2="39" y2="88" stroke="#C88010" stroke-width="1.5"/>
+  </g>
+
+  <!-- 樹枝（站在上面） -->
+  <path d="M15,88 Q35,84 55,86 Q70,88 82,86" fill="none" stroke="#8B6A3A" stroke-width="3" stroke-linecap="round"/>
+</svg>

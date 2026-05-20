@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="pheasantBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A4E8A"/>
+      <stop offset="100%" stop-color="#252E6A"/>
+    </linearGradient>
+    <linearGradient id="tailFan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A60A0"/>
+      <stop offset="30%" stop-color="#6A4090"/>
+      <stop offset="60%" stop-color="#204888"/>
+      <stop offset="100%" stop-color="#1A3060"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="45" cy="97" rx="25" ry="4" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- 扇形彩虹尾羽 -->
+  <!-- 尾羽 1 -->
+  <path d="M60,55 Q70,50 80,42 Q88,36 90,28 Q86,27 82,32 Q74,42 66,50Z"
+        fill="#4A60A0" opacity="0.9"/>
+  <!-- 尾羽 2 -->
+  <path d="M60,58 Q72,56 84,52 Q94,48 97,40 Q93,38 88,44 Q80,52 68,56Z"
+        fill="#6A4090" opacity="0.85"/>
+  <!-- 尾羽 3 -->
+  <path d="M60,62 Q72,62 84,62 Q94,60 98,54 Q94,51 88,56 Q80,60 68,61Z"
+        fill="#204888" opacity="0.8"/>
+  <!-- 尾羽 4 -->
+  <path d="M60,66 Q70,70 80,72 Q90,74 94,68 Q90,64 82,68 Q74,68 66,66Z"
+        fill="#1A3060" opacity="0.75"/>
+  <!-- 尾羽光澤條紋 -->
+  <line x1="64" y1="52" x2="84" y2="34" stroke="white" stroke-width="0.8" opacity="0.3"/>
+  <line x1="65" y1="60" x2="90" y2="46" stroke="white" stroke-width="0.8" opacity="0.25"/>
+  <!-- 尾端白斑 -->
+  <ellipse cx="89" cy="29" rx="3" ry="2" fill="white" opacity="0.6"/>
+  <ellipse cx="96" cy="41" rx="3" ry="1.8" fill="white" opacity="0.5"/>
+
+  <!-- 身體 -->
+  <ellipse cx="42" cy="62" rx="22" ry="16" fill="url(#pheasantBodyGrad)"/>
+  <!-- 翅膀摺疊紋 -->
+  <path d="M24,58 Q34,52 44,56 Q40,64 30,66Z" fill="#2A3870" opacity="0.5"/>
+  <!-- 腹部淡色 -->
+  <ellipse cx="40" cy="65" rx="10" ry="9" fill="#5A7AC0" opacity="0.3"/>
+
+  <!-- 頭 -->
+  <circle cx="22" cy="46" r="14" fill="#3A4E8A"/>
+  <!-- 頭頂羽冠 -->
+  <path d="M22,32 Q19,24 18,18" fill="none" stroke="#3A4E8A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M22,32 Q24,23 26,17" fill="none" stroke="#5A6EA0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="18" cy="17" r="3" fill="#4A6090"/>
+  <circle cx="26" cy="16" r="2.5" fill="#6A80A8"/>
+
+  <!-- 紅色臉頰眼周（裸皮） -->
+  <ellipse cx="14" cy="47" rx="8" ry="6" fill="#CC2020"/>
+  <!-- 白色眼環 -->
+  <circle cx="14" cy="45" r="5" fill="white"/>
+  <!-- 眼睛 -->
+  <circle cx="14" cy="45" r="3.5" fill="#1A1A1A"/>
+  <circle cx="12.8" cy="43.8" r="1.2" fill="white"/>
+
+  <!-- 嘴 -->
+  <path d="M5,46 L9,43 L9,49Z" fill="#D8C020"/>
+  <line x1="5" y1="46" x2="9" y2="46" stroke="#B8A010" stroke-width="0.8"/>
+
+  <!-- 腳 -->
+  <g stroke="#D4A020" stroke-linecap="round">
+    <line x1="32" y1="78" x2="28" y2="90" stroke-width="2.5"/>
+    <line x1="40" y1="78" x2="37" y2="90" stroke-width="2.5"/>
+    <!-- 趾 -->
+    <line x1="28" y1="90" x2="20" y2="93" stroke-width="1.5"/>
+    <line x1="28" y1="90" x2="28" y2="96" stroke-width="1.5"/>
+    <line x1="28" y1="90" x2="34" y2="94" stroke-width="1.5"/>
+    <line x1="37" y1="90" x2="29" y2="93" stroke-width="1.5"/>
+    <line x1="37" y1="90" x2="37" y2="96" stroke-width="1.5"/>
+    <line x1="37" y1="90" x2="43" y2="94" stroke-width="1.5"/>
+    <!-- 距骨刺 -->
+    <line x1="30" y1="83" x2="24" y2="80" stroke-width="2" stroke="#B08010"/>
+  </g>
+</svg>

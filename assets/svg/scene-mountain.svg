@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <!-- 山體底部淡出 -->
+    <linearGradient id="mtFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="60%" stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mt1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8BA4B8"/>
+      <stop offset="100%" stop-color="#6E8FA3"/>
+    </linearGradient>
+    <linearGradient id="mt2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6E8FA3"/>
+      <stop offset="100%" stop-color="#5A7A8F"/>
+    </linearGradient>
+    <linearGradient id="mt3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7A96AA"/>
+      <stop offset="100%" stop-color="#608090"/>
+    </linearGradient>
+    <linearGradient id="mt4Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8BA4B8"/>
+      <stop offset="100%" stop-color="#6E8FA3"/>
+    </linearGradient>
+    <mask id="mtMask">
+      <rect width="1200" height="280" fill="white"/>
+      <rect y="220" width="1200" height="60" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- 最遠山群（最淡） -->
+  <g opacity="0.55">
+    <!-- 遠山 A -->
+    <polygon points="0,230 120,110 240,230" fill="#B8C8D8"/>
+    <!-- 遠山 B -->
+    <polygon points="100,230 260,80 420,230" fill="#B0C2D2"/>
+    <!-- 遠山 C -->
+    <polygon points="780,230 940,95 1100,230" fill="#B0C2D2"/>
+    <!-- 遠山 D -->
+    <polygon points="900,230 1060,115 1200,230" fill="#B8C8D8"/>
+  </g>
+
+  <!-- 主要山群 -->
+  <!-- 山峰1：最左 -->
+  <g>
+    <polygon points="-40,260 160,50 360,260" fill="url(#mt1Grad)"/>
+    <!-- 雪頂 -->
+    <polygon points="140,50 160,28 180,50 165,58 155,58" fill="white" opacity="0.9"/>
+    <!-- 山體陰影面 -->
+    <polygon points="160,50 360,260 260,260" fill="#5A7A8F" opacity="0.25"/>
+  </g>
+
+  <!-- 山峰2：主峰（最高） -->
+  <g>
+    <polygon points="280,270 520,20 760,270" fill="url(#mt2Grad)"/>
+    <!-- 雪頂 -->
+    <polygon points="498,20 520,0 542,20 530,32 510,32" fill="white" opacity="0.92"/>
+    <!-- 山脊線 -->
+    <line x1="520" y1="0" x2="520" y2="80" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <!-- 陰影面 -->
+    <polygon points="520,20 760,270 640,270" fill="#4A6A7E" opacity="0.2"/>
+  </g>
+
+  <!-- 山峰3：右中 -->
+  <g>
+    <polygon points="620,265 820,65 1020,265" fill="url(#mt3Grad)"/>
+    <!-- 雪頂 -->
+    <polygon points="802,65 820,42 838,65 828,75 812,75" fill="white" opacity="0.88"/>
+    <!-- 陰影面 -->
+    <polygon points="820,65 1020,265 920,265" fill="#506878" opacity="0.2"/>
+  </g>
+
+  <!-- 山峰4：最右 -->
+  <g>
+    <polygon points="900,268 1080,88 1260,268" fill="url(#mt4Grad)"/>
+    <!-- 雪頂 -->
+    <polygon points="1062,88 1080,66 1098,88 1086,98 1074,98" fill="white" opacity="0.87"/>
+    <!-- 陰影面 -->
+    <polygon points="1080,88 1260,268 1180,268" fill="#5A7A8F" opacity="0.22"/>
+  </g>
+
+  <!-- 山腳樹叢 -->
+  <g opacity="0.85">
+    <!-- 左側樹叢 -->
+    <circle cx="80" cy="238" r="22" fill="#6B8F6B"/>
+    <circle cx="110" cy="232" r="18" fill="#5A7E5A"/>
+    <circle cx="50" cy="242" r="16" fill="#7A9E7A"/>
+    <circle cx="135" cy="240" r="14" fill="#6B8F6B"/>
+
+    <!-- 中左樹叢 -->
+    <circle cx="370" cy="242" r="20" fill="#6B8F6B"/>
+    <circle cx="400" cy="235" r="24" fill="#5A7E5A"/>
+    <circle cx="430" cy="240" r="18" fill="#7A9E7A"/>
+    <circle cx="455" cy="244" r="14" fill="#6B8F6B"/>
+
+    <!-- 中右樹叢 -->
+    <circle cx="680" cy="245" r="18" fill="#6B8F6B"/>
+    <circle cx="710" cy="238" r="22" fill="#5A7E5A"/>
+    <circle cx="740" cy="243" r="16" fill="#7A9E7A"/>
+
+    <!-- 右側樹叢 -->
+    <circle cx="1040" cy="240" r="20" fill="#6B8F6B"/>
+    <circle cx="1070" cy="234" r="24" fill="#5A7E5A"/>
+    <circle cx="1100" cy="241" r="18" fill="#7A9E7A"/>
+    <circle cx="1128" cy="246" r="14" fill="#6B8F6B"/>
+  </g>
+
+  <!-- 底部淡出遮罩 -->
+  <rect x="0" y="230" width="1200" height="50"
+        fill="url(#skyGrad2)" opacity="0.8"/>
+  <defs>
+    <linearGradient id="skyGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF6EF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FAF6EF" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+</svg>

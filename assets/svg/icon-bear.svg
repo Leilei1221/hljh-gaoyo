@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="bearBodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#3C3C3C"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </radialGradient>
+    <radialGradient id="bearShadow" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.2)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="50" cy="95" rx="28" ry="5" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- 身體 -->
+  <ellipse cx="50" cy="68" rx="24" ry="22" fill="url(#bearBodyGrad)"/>
+  <!-- 身體光澤 -->
+  <ellipse cx="43" cy="60" rx="10" ry="8" fill="#4A4A4A" opacity="0.5"/>
+
+  <!-- 胸部月牙紋 -->
+  <path d="M40,58 Q50,48 60,58 Q55,66 50,67 Q45,66 40,58" fill="#D4A820"/>
+  <!-- 月牙光澤 -->
+  <path d="M43,56 Q50,50 57,56 Q54,62 50,63 Q46,62 43,56" fill="#E8C030" opacity="0.5"/>
+
+  <!-- 頭 -->
+  <circle cx="50" cy="42" r="22" fill="url(#bearBodyGrad)"/>
+  <!-- 頭部光澤 -->
+  <ellipse cx="44" cy="35" rx="9" ry="7" fill="#3C3C3C" opacity="0.5"/>
+
+  <!-- 耳朵 -->
+  <circle cx="30" cy="24" r="9" fill="#2A2A2A"/>
+  <circle cx="30" cy="24" r="5.5" fill="#3C3C3C"/>
+  <circle cx="70" cy="24" r="9" fill="#2A2A2A"/>
+  <circle cx="70" cy="24" r="5.5" fill="#3C3C3C"/>
+
+  <!-- 眼睛（白部分） -->
+  <circle cx="40" cy="40" r="7" fill="white"/>
+  <circle cx="60" cy="40" r="7" fill="white"/>
+  <!-- 虹膜 -->
+  <circle cx="41" cy="41" r="4.5" fill="#2C1A0A"/>
+  <circle cx="61" cy="41" r="4.5" fill="#2C1A0A"/>
+  <!-- 瞳孔 -->
+  <circle cx="41" cy="41" r="2.5" fill="#0A0A0A"/>
+  <circle cx="61" cy="41" r="2.5" fill="#0A0A0A"/>
+  <!-- 眼部高光 -->
+  <circle cx="39" cy="39" r="1.4" fill="white"/>
+  <circle cx="59" cy="39" r="1.4" fill="white"/>
+
+  <!-- 鼻子 -->
+  <ellipse cx="50" cy="50" rx="5" ry="3.5" fill="#3A2020"/>
+  <!-- 鼻孔 -->
+  <circle cx="47.5" cy="50.5" r="1.2" fill="#1A0A0A"/>
+  <circle cx="52.5" cy="50.5" r="1.2" fill="#1A0A0A"/>
+
+  <!-- 嘴 -->
+  <path d="M46,54 Q50,59 54,54" fill="none" stroke="#3A2020" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="50" y1="53" x2="50" y2="54" stroke="#3A2020" stroke-width="1.5"/>
+
+  <!-- 腿 -->
+  <rect x="32" y="84" width="12" height="12" fill="#2A2A2A" rx="6"/>
+  <rect x="56" y="84" width="12" height="12" fill="#2A2A2A" rx="6"/>
+
+  <!-- 手臂 -->
+  <ellipse cx="26" cy="68" rx="7" ry="10" fill="#2A2A2A" transform="rotate(-15, 26, 68)"/>
+  <ellipse cx="74" cy="68" rx="7" ry="10" fill="#2A2A2A" transform="rotate(15, 74, 68)"/>
+
+  <!-- 尾巴 -->
+  <ellipse cx="72" cy="82" rx="5" ry="4" fill="#3A3A3A"/>
+</svg>

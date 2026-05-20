@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="deerBodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#C47840"/>
+      <stop offset="100%" stop-color="#A05A28"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="52" cy="97" rx="26" ry="4" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- 分叉鹿角 -->
+  <g fill="none" stroke="#8B6030" stroke-width="3" stroke-linecap="round">
+    <!-- 左角主幹 -->
+    <path d="M33,20 Q28,10 24,4"/>
+    <!-- 左角分叉 -->
+    <path d="M27,12 Q20,8 16,5"/>
+    <path d="M25,7 Q22,2 24,4"/>
+    <!-- 右角主幹 -->
+    <path d="M43,20 Q46,10 52,4"/>
+    <!-- 右角分叉 -->
+    <path d="M48,11 Q55,7 60,5"/>
+    <path d="M51,7 Q55,3 52,4"/>
+  </g>
+
+  <!-- 頭 -->
+  <ellipse cx="38" cy="28" rx="16" ry="15" fill="#C07840"/>
+  <!-- 頭部光澤 -->
+  <ellipse cx="33" cy="22" rx="7" ry="6" fill="#D08848" opacity="0.5"/>
+  <!-- 吻部（淡色） -->
+  <ellipse cx="38" cy="36" rx="9" ry="7" fill="#D4A070"/>
+
+  <!-- 大耳朵 -->
+  <ellipse cx="22" cy="25" rx="7" ry="10" fill="#C07840" transform="rotate(-20, 22, 25)"/>
+  <ellipse cx="22" cy="25" rx="4" ry="7" fill="#E8A088" opacity="0.6" transform="rotate(-20, 22, 25)"/>
+  <ellipse cx="54" cy="25" rx="7" ry="10" fill="#C07840" transform="rotate(20, 54, 25)"/>
+  <ellipse cx="54" cy="25" rx="4" ry="7" fill="#E8A088" opacity="0.6" transform="rotate(20, 54, 25)"/>
+
+  <!-- 眼睛（大黑眼） -->
+  <circle cx="31" cy="26" r="6" fill="#1A1A1A"/>
+  <circle cx="31" cy="26" r="4.5" fill="#2C1A0A"/>
+  <circle cx="31" cy="26" r="3" fill="#0A0A0A"/>
+  <circle cx="29.5" cy="24.5" r="1.6" fill="white"/>
+
+  <!-- 鼻子 -->
+  <ellipse cx="38" cy="34" rx="4" ry="3" fill="#2A1A0A"/>
+  <circle cx="36.5" cy="34" r="1" fill="#1A0A0A"/>
+  <circle cx="39.5" cy="34" r="1" fill="#1A0A0A"/>
+
+  <!-- 嘴 -->
+  <path d="M34,38 Q38,41 42,38" fill="none" stroke="#8B5030" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- 頸部 -->
+  <path d="M30,40 Q28,50 30,58 Q36,62 44,58 Q46,50 44,40 Q40,44 38,44 Q36,44 30,40Z"
+        fill="#C07840"/>
+
+  <!-- 身體 -->
+  <ellipse cx="54" cy="68" rx="22" ry="18" fill="url(#deerBodyGrad)"/>
+  <!-- 白色腹部 -->
+  <ellipse cx="52" cy="72" rx="12" ry="10" fill="white" opacity="0.5"/>
+
+  <!-- 梅花斑點（白色） -->
+  <g fill="white" opacity="0.8">
+    <circle cx="48" cy="60" r="3"/>
+    <circle cx="60" cy="62" r="2.5"/>
+    <circle cx="65" cy="70" r="3"/>
+    <circle cx="56" cy="73" r="2"/>
+    <circle cx="42" cy="66" r="2.5"/>
+    <circle cx="68" cy="60" r="2"/>
+  </g>
+
+  <!-- 尾巴（白色） -->
+  <ellipse cx="74" cy="62" rx="5" ry="7" fill="white" opacity="0.85"/>
+  <ellipse cx="73" cy="60" rx="3" ry="5" fill="#E8E0D0"/>
+
+  <!-- 4條細腿 -->
+  <!-- 前腿 -->
+  <rect x="38" y="84" width="7" height="16" fill="#A05A28" rx="3"/>
+  <rect x="48" y="84" width="7" height="16" fill="#A05A28" rx="3"/>
+  <!-- 後腿 -->
+  <rect x="60" y="84" width="7" height="16" fill="#A05A28" rx="3"/>
+  <rect x="70" y="82" width="7" height="14" fill="#A05A28" rx="3"/>
+  <!-- 蹄 -->
+  <ellipse cx="41.5" cy="100" rx="4" ry="2.5" fill="#3A2010"/>
+  <ellipse cx="51.5" cy="100" rx="4" ry="2.5" fill="#3A2010"/>
+  <ellipse cx="63.5" cy="100" rx="4" ry="2.5" fill="#3A2010"/>
+  <ellipse cx="73.5" cy="96" rx="4" ry="2.5" fill="#3A2010"/>
+</svg>

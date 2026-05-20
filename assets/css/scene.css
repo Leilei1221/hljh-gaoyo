@@ -1,0 +1,197 @@
+/* ============================================
+   花蓮高中優質化計畫 — scene.css
+   首頁微縮場景 CSS
+   ============================================ */
+
+/* --- 場景主容器 --- */
+.miniature-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 780px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #D4C4DC 0%,
+    #C8B8D4 15%,
+    #E8DCEC 35%,
+    #F5EFE8 60%,
+    #FAF6EF 100%
+  );
+  perspective: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* 整體容器：等距視角效果 */
+.scene-wrapper {
+  position: absolute;
+  inset: 0;
+  transform-origin: center bottom;
+}
+
+/* --- 各層定位 --- */
+.scene-layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.scene-layer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+}
+
+/* 天空：最遠背景，固定於頂部 */
+.layer-sky {
+  top: 0;
+  bottom: auto;
+  height: 60%;
+  overflow: visible;
+}
+
+.layer-sky img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* 山脈層 */
+.layer-mountain {
+  bottom: 28%;
+  transform: translateZ(-20px);
+}
+
+/* 中景：車站、海岸 */
+.layer-mid {
+  bottom: 14%;
+  transform: translateZ(-10px);
+}
+
+/* 近景：學校 */
+.layer-near {
+  bottom: 0;
+  transform: translateZ(0);
+}
+
+/* --- 場景標題 --- */
+.scene-title {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  text-align: left;
+  max-width: 480px;
+}
+
+.scene-title h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--warm-brown);
+  line-height: 1.25;
+  text-shadow:
+    2px 2px 0 rgba(255,255,255,0.6),
+    0 4px 20px rgba(255,255,255,0.8);
+  margin-bottom: 0.5em;
+}
+
+.scene-title h1 span {
+  display: block;
+  font-size: 0.65em;
+  color: var(--rust);
+  font-weight: 600;
+}
+
+.scene-title p {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: var(--text-mid);
+  background: rgba(250,246,239,0.75);
+  backdrop-filter: blur(6px);
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(123,82,48,0.15);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* --- Scroll 提示箭頭 --- */
+.scroll-hint {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.scroll-hint span {
+  font-size: 1.5rem;
+  color: var(--warm-brown);
+  opacity: 0.6;
+  animation: bounce-arrow 2s ease-in-out infinite;
+  display: block;
+  line-height: 1;
+}
+
+/* 場景底部柔化 */
+.miniature-scene::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--cream-dark));
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* --- 響應式 --- */
+@media (max-width: 768px) {
+  .miniature-scene {
+    min-height: 380px;
+    max-height: 60vh;
+  }
+
+  .scene-title {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .layer-mountain {
+    bottom: 30%;
+  }
+
+  .layer-mid {
+    bottom: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .miniature-scene {
+    min-height: 320px;
+    max-height: 55vh;
+  }
+
+  .scene-title h1 {
+    font-size: 1.6rem;
+  }
+}

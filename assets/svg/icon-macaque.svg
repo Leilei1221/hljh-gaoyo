@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="monkeyBodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#A07040"/>
+      <stop offset="100%" stop-color="#7A5028"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="50" cy="97" rx="25" ry="4" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- 捲曲長尾巴 -->
+  <path d="M62,72 Q78,70 84,60 Q88,50 82,42 Q78,36 82,30"
+        fill="none" stroke="#8B6030" stroke-width="6" stroke-linecap="round"/>
+  <path d="M62,72 Q78,70 84,60 Q88,50 82,42 Q78,36 82,30"
+        fill="none" stroke="#A07040" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- 身體 -->
+  <ellipse cx="48" cy="68" rx="20" ry="18" fill="url(#monkeyBodyGrad)"/>
+  <!-- 腹部（淺棕） -->
+  <ellipse cx="48" cy="70" rx="12" ry="13" fill="#C09860" opacity="0.5"/>
+
+  <!-- 頭 -->
+  <circle cx="48" cy="40" r="20" fill="#9A6838"/>
+  <!-- 臉部（粉紅圓形） -->
+  <ellipse cx="48" cy="43" rx="13" ry="12" fill="#E88080"/>
+  <!-- 臉部光澤 -->
+  <ellipse cx="45" cy="40" rx="6" ry="5" fill="#F0A0A0" opacity="0.4"/>
+
+  <!-- 白色眼周 -->
+  <ellipse cx="39" cy="38" rx="7" ry="6" fill="white" opacity="0.7"/>
+  <ellipse cx="57" cy="38" rx="7" ry="6" fill="white" opacity="0.7"/>
+
+  <!-- 眼睛（黑色小） -->
+  <circle cx="39" cy="38" r="4.5" fill="#1A1A1A"/>
+  <circle cx="57" cy="38" r="4.5" fill="#1A1A1A"/>
+  <circle cx="37.8" cy="36.8" r="1.5" fill="white"/>
+  <circle cx="55.8" cy="36.8" r="1.5" fill="white"/>
+
+  <!-- 耳朵（大圓耳） -->
+  <circle cx="28" cy="34" r="11" fill="#9A6838"/>
+  <circle cx="28" cy="34" r="7" fill="#E07070"/>
+  <circle cx="68" cy="34" r="11" fill="#9A6838"/>
+  <circle cx="68" cy="34" r="7" fill="#E07070"/>
+
+  <!-- 鼻子（噘嘴） -->
+  <ellipse cx="48" cy="46" rx="6" ry="4" fill="#D06060"/>
+  <ellipse cx="48" cy="44" rx="5" ry="3" fill="#E08080"/>
+  <!-- 鼻孔 -->
+  <circle cx="45.5" cy="45" r="1.2" fill="#AA3040"/>
+  <circle cx="50.5" cy="45" r="1.2" fill="#AA3040"/>
+  <!-- 嘴（噘嘴形） -->
+  <path d="M42,50 Q48,55 54,50" fill="#D06060" stroke="#AA3040" stroke-width="0.8"/>
+
+  <!-- 盤腿坐姿腿 -->
+  <!-- 左腿 -->
+  <path d="M30,78 Q24,82 22,90 Q30,94 38,90 Q42,84 38,76Z" fill="#8B6030"/>
+  <!-- 右腿 -->
+  <path d="M66,78 Q72,82 74,90 Q66,94 58,90 Q54,84 58,76Z" fill="#8B6030"/>
+  <!-- 手 -->
+  <ellipse cx="28" cy="68" rx="8" ry="6" fill="#8B6030" transform="rotate(-20, 28, 68)"/>
+  <ellipse cx="68" cy="68" rx="8" ry="6" fill="#8B6030" transform="rotate(20, 68, 68)"/>
+</svg>

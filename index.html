@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花蓮高中 高中優質化輔助方案</title>
+  <meta name="description" content="國立花蓮高級中學高中優質化輔助方案｜經費申請、核銷流程、成果報告">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/scene.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- SVG 濾鏡定義 -->
+  <svg width="0" height="0" style="position:absolute;overflow:hidden;" aria-hidden="true">
+    <defs>
+      <filter id="wool-texture" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+        <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+      <filter id="felt-bump" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="4" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- 頂部毛線裝飾條 -->
+  <div class="yarn-decoration" role="presentation" aria-hidden="true"></div>
+
+  <!-- 導覽列 -->
+  <nav class="top-nav" role="navigation" aria-label="主要導覽">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/svg/icon-bear.svg" alt="" class="nav-icon" width="36" height="36">
+      <div class="nav-title">
+        <span class="nav-title-main">花蓮高中</span>
+        <span class="nav-title-sub">優質化輔助方案</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" aria-controls="nav-drawer">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="nav-link">🏠 首頁</a></li>
+      <li><a href="budget.html" class="nav-link">💰 總體經費</a></li>
+      <li><a href="forms.html" class="nav-link">📋 申請檔案</a></li>
+      <li><a href="voucher.html" class="nav-link">🧾 核銷事項</a></li>
+      <li><a href="report.html" class="nav-link">📊 成果報告</a></li>
+      <li><a href="laws.html" class="nav-link">📜 法規相關</a></li>
+      <li><a href="archive.html" class="nav-link">🗂 歷年計劃</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+    <ul>
+      <li><a href="index.html">🏠 首頁</a></li>
+      <li><a href="budget.html">💰 總體經費計畫</a></li>
+      <li><a href="forms.html">📋 申請檔案</a></li>
+      <li><a href="voucher.html">🧾 核銷相關事項</a></li>
+      <li><a href="report.html">📊 成果報告</a></li>
+      <li><a href="laws.html">📜 法規相關</a></li>
+      <li><a href="archive.html">🗂 歷年計劃書</a></li>
+    </ul>
+  </div>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero 場景 -->
+  <section class="miniature-scene" aria-label="花蓮微縮場景">
+    <div class="scene-wrapper">
+      <div class="scene-layer layer-sky">
+        <img src="assets/svg/scene-sky.svg" alt="" role="presentation">
+      </div>
+      <div class="scene-layer layer-mountain">
+        <img src="assets/svg/scene-mountain.svg" alt="太魯閣山景">
+      </div>
+      <div class="scene-layer layer-mid">
+        <img src="assets/svg/scene-mid.svg" alt="花蓮車站與七星潭">
+      </div>
+      <div class="scene-layer layer-near">
+        <img src="assets/svg/scene-school.svg" alt="花蓮高中校舍">
+      </div>
+    </div>
+    <div class="scene-title">
+      <h1>花蓮高中<br><span>高中優質化輔助方案</span></h1>
+      <p>韌生花蓮 ・ 113–114 學年度</p>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>↓</span>
+    </div>
+  </section>
+
+  <!-- 功能卡片區 -->
+  <section class="cards-section" aria-label="功能選單">
+    <div class="cards-container">
+      <a href="budget.html" class="func-card" aria-label="總體經費計畫">
+        <div class="card-icon"><img src="assets/svg/icon-boar.svg" alt="野豬" width="64" height="64"></div>
+        <h2 class="card-title">總體經費計畫</h2>
+        <p class="card-desc">學年度經費總表檔案</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="forms.html" class="func-card" aria-label="申請檔案">
+        <div class="card-icon"><img src="assets/svg/icon-blue-magpie.svg" alt="台灣藍鵲" width="64" height="64"></div>
+        <h2 class="card-title">申請檔案</h2>
+        <p class="card-desc">計畫書與經費表下載</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="voucher.html" class="func-card" aria-label="核銷相關事項">
+        <div class="card-icon"><img src="assets/svg/icon-leopard-cat.svg" alt="石虎" width="64" height="64"></div>
+        <h2 class="card-title">核銷相關事項</h2>
+        <p class="card-desc">活動簽呈與核銷 SOP</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="report.html" class="func-card" aria-label="成果報告">
+        <div class="card-icon"><img src="assets/svg/icon-macaque.svg" alt="台灣獼猴" width="64" height="64"></div>
+        <h2 class="card-title">成果報告</h2>
+        <p class="card-desc">成果報告檔案及範例</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="laws.html" class="func-card" aria-label="法規相關">
+        <div class="card-icon"><img src="assets/svg/icon-pheasant.svg" alt="帝雉" width="64" height="64"></div>
+        <h2 class="card-title">法規相關</h2>
+        <p class="card-desc">依據行政院相關公告</p>
+        <span class="card-arrow">→</span>
+      </a>
+      <a href="archive.html" class="func-card" aria-label="歷年計劃書">
+        <div class="card-icon"><img src="assets/svg/icon-deer.svg" alt="梅花鹿" width="64" height="64"></div>
+        <h2 class="card-title">歷年計劃書</h2>
+        <p class="card-desc">歷年送審高優計畫書</p>
+        <span class="card-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 公告區 -->
+  <section class="notice-section" aria-label="最新公告">
+    <div class="content-container">
+      <div class="notice-sticky">
+        <div class="notice-tape"></div>
+        <h3 class="notice-title">📌 公告</h3>
+        <p>目前建構中，有任何建議請跟雅蕾聯繫，分機 <strong>#500</strong></p>
+        <p>計畫諮詢：分機 <strong>#201</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Calendar -->
+  <section class="calendar-section" aria-label="行事曆">
+    <div class="content-container">
+      <h2 class="section-title">📅 優質化計畫行事曆</h2>
+      <div class="calendar-wrapper">
+        <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%23FAF6EF&ctz=Asia%2FTaipei&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0"
+          style="border:0" width="100%" height="450" frameborder="0" scrolling="no"
+          title="花蓮高中優質化計畫行事曆">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="content-container">
+      <img src="assets/svg/icon-bear.svg" alt="" width="32" height="32" class="footer-bear">
+      <p>國立花蓮高級中學 ・ 高中優質化輔助方案</p>
+      <p class="footer-contact">聯絡助理雅蕾：分機 #500</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/scene.js"></script>
+</body>
+</html>

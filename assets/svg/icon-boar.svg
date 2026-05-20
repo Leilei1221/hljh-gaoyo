@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="boarBodyGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#4A3828"/>
+      <stop offset="100%" stop-color="#2A2018"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 陰影 -->
+  <ellipse cx="50" cy="97" rx="28" ry="4" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- 身體（粗壯） -->
+  <ellipse cx="52" cy="64" rx="28" ry="22" fill="url(#boarBodyGrad)"/>
+  <!-- 身體毛紋路 -->
+  <g fill="none" stroke="#3A2C1C" stroke-width="1" opacity="0.4">
+    <path d="M28,55 Q40,52 52,54 Q64,56 76,54"/>
+    <path d="M26,62 Q38,59 52,61 Q66,63 78,61"/>
+    <path d="M28,70 Q40,67 52,69 Q64,71 76,69"/>
+  </g>
+  <!-- 背脊剛毛（直立） -->
+  <g stroke="#1A1208" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="28" y1="45" x2="26" y2="38"/>
+    <line x1="36" y1="43" x2="34" y2="36"/>
+    <line x1="44" y1="42" x2="42" y2="35"/>
+    <line x1="52" y1="42" x2="50" y2="35"/>
+    <line x1="60" y1="43" x2="58" y2="36"/>
+    <line x1="68" y1="44" x2="67" y2="37"/>
+  </g>
+
+  <!-- 頭 -->
+  <ellipse cx="24" cy="56" rx="18" ry="16" fill="#3C2C1C"/>
+  <!-- 頭部光澤 -->
+  <ellipse cx="19" cy="49" rx="7" ry="6" fill="#504030" opacity="0.5"/>
+
+  <!-- 耳朵（小） -->
+  <ellipse cx="15" cy="42" rx="5" ry="7" fill="#3C2C1C" transform="rotate(-15, 15, 42)"/>
+  <ellipse cx="15" cy="42" rx="3" ry="5" fill="#6A4A3A" opacity="0.5" transform="rotate(-15, 15, 42)"/>
+  <ellipse cx="33" cy="42" rx="5" ry="7" fill="#3C2C1C" transform="rotate(10, 33, 42)"/>
+  <ellipse cx="33" cy="42" rx="3" ry="5" fill="#6A4A3A" opacity="0.5" transform="rotate(10, 33, 42)"/>
+
+  <!-- 吻部（圓盤灰色） -->
+  <ellipse cx="8" cy="58" rx="10" ry="8" fill="#8A8A7A"/>
+  <ellipse cx="8" cy="58" rx="7.5" ry="6" fill="#9A9A8A"/>
+  <!-- 鼻孔 -->
+  <ellipse cx="5.5" cy="57" rx="2.5" ry="3" fill="#4A4040"/>
+  <ellipse cx="10.5" cy="57" rx="2.5" ry="3" fill="#4A4040"/>
+
+  <!-- 獠牙（兩根白色） -->
+  <path d="M10,63 Q12,68 10,73" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14,63 Q16,70 14,76" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 眼睛（小黑眼） -->
+  <circle cx="22" cy="52" r="4" fill="#1A1A1A"/>
+  <circle cx="22" cy="52" r="2.5" fill="#0A0A0A"/>
+  <circle cx="20.8" cy="50.8" r="1.2" fill="white"/>
+
+  <!-- 短腿 -->
+  <!-- 前腿 -->
+  <rect x="28" y="84" width="10" height="14" fill="#2A2018" rx="4"/>
+  <rect x="42" y="84" width="10" height="14" fill="#2A2018" rx="4"/>
+  <!-- 後腿 -->
+  <rect x="60" y="82" width="10" height="14" fill="#2A2018" rx="4"/>
+  <rect x="74" y="84" width="10" height="12" fill="#2A2018" rx="4"/>
+  <!-- 蹄 -->
+  <ellipse cx="33" cy="98" rx="5.5" ry="3" fill="#1A1008" />
+  <ellipse cx="47" cy="98" rx="5.5" ry="3" fill="#1A1008"/>
+  <ellipse cx="65" cy="96" rx="5.5" ry="3" fill="#1A1008"/>
+  <ellipse cx="79" cy="96" rx="5.5" ry="3" fill="#1A1008"/>
+
+  <!-- 短尾巴 -->
+  <path d="M78,62 Q84,58 82,54" fill="none" stroke="#2A2018" stroke-width="4" stroke-linecap="round"/>
+</svg>

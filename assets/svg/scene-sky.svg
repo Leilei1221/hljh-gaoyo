@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- 天空漸層：薰衣草→米白 -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8B8D4"/>
+      <stop offset="50%" stop-color="#DDD0E8"/>
+      <stop offset="100%" stop-color="#FAF6EF"/>
+    </linearGradient>
+    <!-- 遠山淡出 -->
+    <linearGradient id="distMountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4C8D8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4C8D8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天空背景 -->
+  <rect width="1200" height="350" fill="url(#skyGrad)"/>
+
+  <!-- 遠方淡淡山影輪廓 -->
+  <g opacity="0.3">
+    <path d="M0 280 Q100 230 180 240 Q260 250 320 210 Q380 170 440 185 Q500 200 560 175 Q640 148 720 165 Q800 182 860 160 Q920 138 980 155 Q1040 170 1100 150 Q1150 135 1200 148 L1200 350 L0 350 Z"
+          fill="#D4C8D8"/>
+  </g>
+
+  <!-- 雲朵群 1（左中） -->
+  <g class="cloud-drift-1" opacity="0.85">
+    <circle cx="180" cy="90" r="38" fill="white"/>
+    <circle cx="220" cy="78" r="48" fill="white"/>
+    <circle cx="260" cy="85" r="40" fill="white"/>
+    <circle cx="300" cy="92" r="32" fill="white"/>
+    <rect x="148" y="90" width="184" height="40" fill="white"/>
+  </g>
+
+  <!-- 雲朵群 2（右側） -->
+  <g class="cloud-drift-2" opacity="0.82">
+    <circle cx="820" cy="70" r="30" fill="white"/>
+    <circle cx="856" cy="58" r="40" fill="white"/>
+    <circle cx="896" cy="62" r="44" fill="white"/>
+    <circle cx="936" cy="70" r="34" fill="white"/>
+    <circle cx="970" cy="76" r="26" fill="white"/>
+    <rect x="796" y="70" width="200" height="38" fill="white"/>
+  </g>
+
+  <!-- 雲朵群 3（上方小） -->
+  <g class="cloud-drift-3" opacity="0.7">
+    <circle cx="520" cy="45" r="22" fill="white"/>
+    <circle cx="550" cy="36" r="30" fill="white"/>
+    <circle cx="582" cy="40" r="26" fill="white"/>
+    <circle cx="610" cy="48" r="20" fill="white"/>
+    <rect x="500" y="45" width="130" height="28" fill="white"/>
+  </g>
+
+  <!-- 遠山輪廓（最遠景） -->
+  <path d="M0 310 Q80 280 150 285 Q220 290 280 265 Q340 240 410 255 Q480 270 530 248 Q580 226 650 238 Q720 250 780 232 Q840 214 900 228 Q960 242 1020 224 Q1080 206 1140 218 Q1170 224 1200 220 L1200 350 L0 350 Z"
+        fill="url(#distMountainGrad)"/>
+
+  <!-- 小星光點點 -->
+  <circle cx="420" cy="30" r="1.5" fill="#C8B8D4" opacity="0.6"/>
+  <circle cx="680" cy="22" r="1" fill="#C8B8D4" opacity="0.5"/>
+  <circle cx="150" cy="25" r="1.2" fill="#C8B8D4" opacity="0.4"/>
+  <circle cx="950" cy="18" r="1.5" fill="#C8B8D4" opacity="0.5"/>
+</svg>

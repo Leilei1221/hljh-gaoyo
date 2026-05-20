@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#88AECE"/>
+      <stop offset="100%" stop-color="#A8C8E8"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8B490"/>
+      <stop offset="100%" stop-color="#B8A07A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 七星潭海岸 -->
+  <g>
+    <!-- 海面 -->
+    <path d="M560,180 Q640,170 720,178 Q800,186 900,172 Q980,160 1060,168 Q1120,174 1200,165 L1200,240 L560,240 Z"
+          fill="url(#seaGrad)" opacity="0.8"/>
+    <!-- 海浪紋 -->
+    <path d="M580,185 Q640,180 700,186 Q760,192 820,184 Q880,176 940,182 Q1000,188 1060,180 Q1120,172 1200,178"
+          fill="none" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <path d="M600,193 Q660,188 720,194 Q780,200 840,192 Q900,184 960,190 Q1020,196 1080,188 Q1140,180 1200,186"
+          fill="none" stroke="white" stroke-width="1" opacity="0.35"/>
+    <!-- 海灘礫石 -->
+    <path d="M560,210 Q700,200 800,206 Q900,212 1050,204 Q1130,200 1200,206 L1200,240 L560,240 Z"
+          fill="#C8B490" opacity="0.6"/>
+  </g>
+
+  <!-- 地面基底 -->
+  <rect x="0" y="200" width="1200" height="40" fill="#C4B490" opacity="0.5"/>
+
+  <!-- 花蓮車站建築（左中） -->
+  <g transform="translate(80, 90)">
+    <!-- 站體主建築 -->
+    <rect x="0" y="40" width="280" height="120" fill="#E8D5B5" rx="4"/>
+    <!-- 屋頂三角 -->
+    <polygon points="-15,40 140,5 295,40" fill="#B5533C"/>
+    <!-- 屋頂裝飾線 -->
+    <line x1="140" y1="5" x2="140" y2="40" stroke="#943020" stroke-width="2" opacity="0.5"/>
+    <!-- 正面廊柱 -->
+    <rect x="20" y="80" width="12" height="80" fill="#D4C09A" rx="2"/>
+    <rect x="55" y="80" width="12" height="80" fill="#D4C09A" rx="2"/>
+    <rect x="215" y="80" width="12" height="80" fill="#D4C09A" rx="2"/>
+    <rect x="248" y="80" width="12" height="80" fill="#D4C09A" rx="2"/>
+    <!-- 拱門入口 -->
+    <path d="M100,160 L100,100 Q140,75 180,100 L180,160 Z" fill="#C4A880"/>
+    <path d="M108,160 L108,103 Q140,82 172,103 L172,160 Z" fill="#8B6A3A" opacity="0.3"/>
+    <!-- 窗戶 -->
+    <rect x="22" y="95" width="28" height="22" fill="#88AECE" rx="2" opacity="0.7"/>
+    <rect x="250" y="95" width="28" height="22" fill="#88AECE" rx="2" opacity="0.7"/>
+    <rect x="22" y="130" width="28" height="20" fill="#88AECE" rx="2" opacity="0.7"/>
+    <rect x="250" y="130" width="28" height="20" fill="#88AECE" rx="2" opacity="0.7"/>
+    <!-- 站名文字區 -->
+    <rect x="60" y="55" width="160" height="24" fill="#C8380A" opacity="0.85" rx="2"/>
+    <text x="140" y="72" text-anchor="middle" fill="white" font-size="13" font-family="'Noto Sans TC', sans-serif" font-weight="700">花 蓮 車 站</text>
+    <!-- 廣場地磚 -->
+    <g opacity="0.35">
+      <line x1="0" y1="175" x2="280" y2="175" stroke="#A09070" stroke-width="1"/>
+      <line x1="0" y1="185" x2="280" y2="185" stroke="#A09070" stroke-width="1"/>
+      <line x1="0" y1="195" x2="280" y2="195" stroke="#A09070" stroke-width="1"/>
+      <line x1="40" y1="160" x2="40" y2="200" stroke="#A09070" stroke-width="1"/>
+      <line x1="80" y1="160" x2="80" y2="200" stroke="#A09070" stroke-width="1"/>
+      <line x1="120" y1="160" x2="120" y2="200" stroke="#A09070" stroke-width="1"/>
+      <line x1="160" y1="160" x2="160" y2="200" stroke="#A09070" stroke-width="1"/>
+      <line x1="200" y1="160" x2="200" y2="200" stroke="#A09070" stroke-width="1"/>
+      <line x1="240" y1="160" x2="240" y2="200" stroke="#A09070" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- 椰子樹 1 -->
+  <g transform="translate(420, 100)">
+    <rect x="-4" y="0" width="8" height="100" fill="#8B6A3A" rx="4"/>
+    <!-- 葉子 -->
+    <ellipse cx="-30" cy="10" rx="35" ry="8" fill="#5A8C5A" transform="rotate(-30, -30, 10)"/>
+    <ellipse cx="30" cy="8" rx="35" ry="8" fill="#4A7C4A" transform="rotate(25, 30, 8)"/>
+    <ellipse cx="-5" cy="-8" rx="38" ry="7" fill="#5A8C5A" transform="rotate(-5, -5, -8)"/>
+    <ellipse cx="5" cy="-5" rx="32" ry="7" fill="#4A7C4A" transform="rotate(15, 5, -5)"/>
+    <!-- 椰子 -->
+    <circle cx="-5" cy="2" r="6" fill="#8B5A20"/>
+    <circle cx="5" cy="4" r="5" fill="#8B5A20"/>
+  </g>
+
+  <!-- 椰子樹 2 -->
+  <g transform="translate(480, 110)">
+    <rect x="-3" y="0" width="7" height="85" fill="#9B7A4A" rx="3"/>
+    <ellipse cx="-25" cy="8" rx="30" ry="7" fill="#5A8C5A" transform="rotate(-35, -25, 8)"/>
+    <ellipse cx="25" cy="6" rx="32" ry="7" fill="#4A7C4A" transform="rotate(20, 25, 6)"/>
+    <ellipse cx="0" cy="-5" rx="34" ry="6" fill="#5A8C5A" transform="rotate(-8, 0, -5)"/>
+    <circle cx="0" cy="3" r="5" fill="#8B5A20"/>
+  </g>
+
+  <!-- 椰子樹 3（右） -->
+  <g transform="translate(540, 95)">
+    <rect x="-4" y="0" width="8" height="108" fill="#8B6A3A" rx="4"/>
+    <ellipse cx="-32" cy="10" rx="36" ry="8" fill="#5A8C5A" transform="rotate(-28, -32, 10)"/>
+    <ellipse cx="28" cy="8" rx="34" ry="8" fill="#4A7C4A" transform="rotate(22, 28, 8)"/>
+    <ellipse cx="-4" cy="-6" rx="38" ry="7" fill="#5A8C5A" transform="rotate(-3, -4, -6)"/>
+    <circle cx="-4" cy="2" r="6" fill="#8B5A20"/>
+    <circle cx="4" cy="5" r="5" fill="#7A4A10"/>
+  </g>
+
+  <!-- 路燈 -->
+  <g opacity="0.8">
+    <line x1="390" y1="140" x2="390" y2="210" stroke="#888" stroke-width="3"/>
+    <path d="M390,140 Q400,130 410,132" fill="none" stroke="#888" stroke-width="3"/>
+    <circle cx="412" cy="132" r="5" fill="#FFE87A" opacity="0.8"/>
+  </g>
+
+  <!-- 草地基底 -->
+  <path d="M0,215 Q100,208 200,212 Q350,218 500,210 Q600,204 700,210 Q800,216 950,208 Q1060,202 1200,208 L1200,240 L0,240 Z"
+        fill="#8AAA7A" opacity="0.6"/>
+</svg>

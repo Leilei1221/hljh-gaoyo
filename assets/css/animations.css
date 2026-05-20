@@ -1,0 +1,203 @@
+/* ============================================
+   花蓮高中優質化計畫 — animations.css
+   所有動畫定義
+   ============================================ */
+
+/* --- breathe：動物呼吸 --- */
+@keyframes breathe {
+  0%, 100% { transform: scale(1.0); }
+  50% { transform: scale(1.03); }
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* --- fly-across：藍鵲飛越 --- */
+@keyframes fly-across {
+  0% {
+    transform: translateX(-120px) translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  48% {
+    transform: translateX(calc(100vw + 60px)) translateY(-30px) scaleX(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(calc(100vw + 80px)) translateY(-30px) scaleX(-1);
+    opacity: 0;
+  }
+  51% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 80px)) translateY(-30px) scaleX(-1);
+  }
+  95% {
+    opacity: 0;
+    transform: translateX(-120px) translateY(0) scaleX(1);
+  }
+  100% {
+    transform: translateX(-120px) translateY(0) scaleX(1);
+    opacity: 0;
+  }
+}
+
+.flying-bird {
+  animation: fly-across 18s linear infinite;
+  animation-delay: 3s;
+  transform-origin: center center;
+  position: absolute;
+}
+
+/* --- card-drop-in：卡片入場 --- */
+@keyframes card-drop-in {
+  0% {
+    transform: translateY(30px) rotate(-1deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-4px) rotate(0.3deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(2px) rotate(-0.1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* 交錯延遲 */
+.func-card:nth-child(1) { animation-delay: 0.05s; }
+.func-card:nth-child(2) { animation-delay: 0.12s; }
+.func-card:nth-child(3) { animation-delay: 0.19s; }
+.func-card:nth-child(4) { animation-delay: 0.26s; }
+.func-card:nth-child(5) { animation-delay: 0.33s; }
+.func-card:nth-child(6) { animation-delay: 0.40s; }
+
+/* --- yarn-weave：毛線橫移 --- */
+@keyframes yarn-weave {
+  0% { background-position: 0 0; }
+  100% { background-position: 200px 0; }
+}
+
+/* --- float-gentle：上下浮動 --- */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  25% { transform: translateY(-5px) rotate(1deg); }
+  75% { transform: translateY(3px) rotate(-0.5deg); }
+}
+
+.animate-float {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+/* --- bounce-arrow：scroll 提示 --- */
+@keyframes bounce-arrow {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translateY(6px);
+    opacity: 0.9;
+  }
+  60% {
+    transform: translateY(2px);
+    opacity: 0.7;
+  }
+}
+
+/* --- 場景雲朵飄移 --- */
+@keyframes cloud-drift {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+  100% { transform: translateX(0); }
+}
+
+.cloud-drift-1 {
+  animation: cloud-drift 8s ease-in-out infinite;
+}
+.cloud-drift-2 {
+  animation: cloud-drift 11s ease-in-out infinite;
+  animation-delay: -3s;
+}
+.cloud-drift-3 {
+  animation: cloud-drift 14s ease-in-out infinite;
+  animation-delay: -6s;
+}
+
+/* --- 閃爍星光 --- */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* --- 彩虹搖擺（尾羽） --- */
+@keyframes tail-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.tail-sway {
+  animation: tail-sway 3s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+/* --- 波紋擴散 --- */
+@keyframes ripple {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* --- 入場淡入 --- */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.6s var(--ease-soft) forwards;
+}
+
+/* --- prefers-reduced-motion：停止所有動畫 --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-breathe,
+  .flying-bird,
+  .animate-float,
+  .cloud-drift-1,
+  .cloud-drift-2,
+  .cloud-drift-3,
+  .tail-sway,
+  .fade-in-up {
+    animation: none !important;
+  }
+
+  .yarn-decoration {
+    animation: none !important;
+  }
+
+  .func-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
